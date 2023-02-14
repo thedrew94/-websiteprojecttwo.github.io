@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    height: 2000px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -42,11 +46,17 @@ body {
 
 .topheader-middle-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 75px;
+    flex-direction: column;
+    align-items: center;
     color: #FFF;
     line-height: 25px;
+    transition: all 0.6s;
+}
+
+.topheader-middle-content:hover {
+    color: #000;
 }
 
 .title-content {
@@ -59,6 +69,11 @@ body {
     height: 40px;
     background-color: #FFF9F0;
     color: #D4461C;
+}
+
+.empty-div {
+    display: flex;
+    width: 250px;
 }
 
 .topheader-bottom-content {
@@ -79,6 +94,7 @@ body {
 .topheader-topbottom-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 61px;
     font-size: 14px;
 }
@@ -112,6 +128,28 @@ body {
     background-color: #fff;
     border-radius: 12px;
     align-items: center;
+    color: #D4461C;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.card:hover {
+    background: rgb(212, 70, 28, 0.1);;
+}
+
+.card:hover img {
+    transition: all 0.4s;
+    transform: scale(110%);
+}
+
+.text-display {
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 10px;
+    font-size: 15px;
 }
 
 .card div {
@@ -138,7 +176,103 @@ body {
 }
 
 .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 136px;
     height: 98px;
     border-left: 1px solid rgba(112, 112, 112, 0.14);
+    font-size: 14px;
+    font-weight: 5px;
+    line-height: 3.2;
+    text-align: center;
+    transition: all 0.4s;
+    cursor: pointer;
 }
+
+.card-container:hover img {
+    transform: scale(110%);
+}
+
+.special {
+    line-height: 1.5;
+}
+
+.bottom-navbar-container img {
+    width: 77px;
+    height: 40px;
+}
+
+.section2 {
+    background: #F4F4F4;
+}
+
+.section3 {
+    background: #FFF4F4;
+}
+
+.panorama-content {
+    display: block;
+    width: 100%;
+    height: 247px;
+    background-size: cover;
+    background-position:center center ;
+    background-repeat:no-repeat ;
+    background-image: url(./img/pt-main-search.jpg);
+    overflow: hidden;
+}
+
+.tittle-content {
+    display: block;
+    width: 100%;
+    height: 189px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 189px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #482715;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.round-container {
+    width: 178px;
+    height: 178px;
+    background-color: #FFF;
+    background-image: url(./img/map.png);
+    background-size: 58%;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    border-radius: 12rem 12rem 0 0;
+    transform: translateY(-80px);
+}
+
+.text-container {
+    background-color: #FFF;
+    width: 278px;
+    transform: translateY(-80px);
+}
+
+.map-outside-container {
+    display: flex;
+    justify-content: center;
+    background: #F5F2F2;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    min-width: 700px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
