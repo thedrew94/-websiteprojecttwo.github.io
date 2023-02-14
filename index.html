@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script defer src="./main.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
@@ -12,19 +14,26 @@
 
     <nav class="topheader-container">
         <container class="topheader-top">
-            <div class="topheader-top-content">箱根ナビ　箱根登山鉄道・箱根ロープウェイ・箱根観光船・箱根登山バス公式サイト</div>
+            <div class="topheader-top-content">
+            <div class="empty-div"></div>    
+            箱根ナビ　箱根登山鉄道・箱根ロープウェイ・箱根観光船・箱根登山バス公式サイト</div>
         </container>
         <container class="topheader-middle">
             <div class="topheader-middle-content">
+                <div class="empty-div"></div>  
                 <div class="title-content">箱根ナビ</div>
                 <div>Powered by 小田急箱根グループ</div>
             </div>
         </container>
         <container class="topheader-bottom">
-            <div class="topheader-bottom-content">重要なお知らせ</div>
+            <div class="topheader-bottom-content">
+            <div class="empty-div"></div>     
+            重要なお知らせ 　　　　　【1/10～】小田急箱根グループ　時刻表＆路線図</div>
         </container>
         <container class="topheader-topbottom">
-            <div class="topheader-topbottom-content">運行情報
+            
+            <div class="topheader-topbottom-content">
+                運行情報
                 <div>運休あり</div>
             </div>
         </container>
@@ -35,47 +44,104 @@
             <div>
                 <img src="./img/trains.png" alt="trains img"/> 
             </div>
-            <div></div>
+            <div class="text-display">
+                <b>箱根登山電車<br>・ケーブルカー</b>
+            </div>
         </div>
         <div class="card"> 
             <div>
             <img src="./img/ropeway.png" alt="ropeway img"/> 
             </div>
-            <div></div>
+            <div class="text-display">
+                <b>箱根<br>ロープウェイ</b>
+            </div>
         </div>
         <div class="card"> 
             <div>
             <img src="./img/ship.png" alt="ship img"/> 
             </div>
-            <div></div>
+            <div class="text-display">
+                <b>箱根海賊船</b>
+            </div>
         </div>
         <div class="card"> 
             <div>
             <img src="./img/bus.png" alt="bus img"/> 
             </div>
-            <div></div>
+            <div class="text-display">
+                <b>箱根登山バス</b>
+            </div>
         </div>
         <div class="card"> 
             <div>
             <img src="./img/onsen.png" alt="onsen img"/> 
             </div>
-            <div></div>
+            <div class="text-display">
+                <b>グループ施設</b>
+            </div>
         </div>
     </main>
 
     <div class="bottom-navbar">
         <container class="bottom-navbar-container">
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
-            <div class="card-container"></div>
+            <div class="card-container">
+                <img src="./img/time.png" alt="timeschedule img" />
+                <b>時刻表・のりば</b>
+            </div>
+            <div class="card-container">
+                <img src="./img/map.png" alt="map img"/>
+                <b>経路検索・運賃</b>
+            </div>
+            <div class="card-container">
+                <img src="./img/map2.png" alt="map img" />
+                <b>路線図・アクセス</b>
+            </div>
+            <div class="card-container">
+                <img src="./img/car.png" alt="car img" />
+                <b>お車でお越しの方</b>
+            </div>
+            <div class="card-container section2">
+                <img src="./img/hakonetickets.png" alt="tickets img" />
+                <b>箱根フリーパス</b>
+            </div>
+            <div class="card-container section2">
+                <img src="./img/ferryrope.png" alt="ferry & rope img"/>
+                <b>乗り物チケット</b>
+            </div>
+            <div class="card-container section2">
+                <img src="./img/onsenpaint.png" alt="onsen img"/>
+                <b>観光・体験チケット</b>
+            </div>
+            <div class="card-container section2 special">
+                <img src="./img/people.png" alt="people img"/>
+                <b>団体・貸切でご利用の方</b>
+            </div>
+            <div class="card-container section2">
+                <img src="./img/bed.png" alt="bed img"/>
+                <b>宿予約</b>
+            </div>
+            <div class="card-container section3">
+                <img src="./img/shinkansen.png" alt="shinkanse img"/>
+                <b>小田急ロマンスカー</b>
+            </div>
         </container>
+    </div>
+
+    <div class="panorama-content">
+        <!-- <img src="./img/pt-main-search.jpg" alt="ship img"/> -->
+    </div>
+
+    <div class="title-content">
+        <div class="img-container">
+            <div class="round-container"></div>
+            <div class="text-container">
+                <p>経路検索・運賃</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-outside-container">
+        <div class="map-container" id="map"></div>
     </div>
     
 </body>
